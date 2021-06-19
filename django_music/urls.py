@@ -17,10 +17,15 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 from albums import views as albums_views
+from django.conf.urls.static import static
+
+import albums
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', albums_views.list_albums, name='list_albums'),
+    path('albums/add/', albums_views.add_album, name='add_album'),
+
 ]
 
 if settings.DEBUG:
@@ -31,3 +36,6 @@ if settings.DEBUG:
         # For django versions before 2.0:
         # url(r'^__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns
+
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

@@ -4,11 +4,13 @@
 
 <h1>All Albums</h1>
 
+<p><a href="{% url 'add_album' %}">Add New Album</a></p>
+
 <div>
     {% for album in albums %}
         <div class="card">
             {% if album.title %}
-                <p>{{album.title}}</p>
+                <p>{{album.title}}: {{album.artist}}</p>
             {% endif %}
         </div>
     {% endfor %}
