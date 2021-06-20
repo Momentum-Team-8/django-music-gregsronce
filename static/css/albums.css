@@ -2,7 +2,16 @@
     padding-left: 15px;
 }
 
+.page_title {
+    text-align: center;
+    font-size: 100px;
+}
+
 .image > img {
     width: 200px;
     height: 200px;
+}
+
+.card {
+    margin-bottom: 20px;
 }
