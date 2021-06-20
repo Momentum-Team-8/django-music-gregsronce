@@ -13,3 +13,14 @@ class AlbumForm(ModelForm):
             'artist',
             'cover_art',
         ]
+
+class AlbumDetailsForm(ModelForm):
+
+    class Meta:
+        model = Album
+        fields = [
+            'title',
+            'artist',
+            'cover_art',
+            'release_year',
+        ]

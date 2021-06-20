@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Album Details</h1>
+
+<div>
+    <div class="card">
+        {% if album.title %}
+            <p class="image"><img src={{album.cover_art}} alt="#"></p> 
+            <p class="album_title">Album Title: {{album.title}}</p> 
+            <p class="album_artist">Artist: {{album.artist}}</p>
+            <p class="release_year">Release Year: {{album.release_year}}</p>
+        {% endif %}
+        <p><a href="{% url 'list_albums' %}">Back to Albums List</a></p>
+    </div>
+{% endblock %}
