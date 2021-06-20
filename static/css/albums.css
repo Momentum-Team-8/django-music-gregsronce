@@ -1,17 +1,39 @@
-* {
+.page_title {
     padding-left: 15px;
 }
 
-.page_title {
-    text-align: center;
-    font-size: 100px;
+.add_album {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-size: large;
 }
 
-.image > img {
-    width: 200px;
-    height: 200px;
+.album_info {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
 }
 
 .card {
-    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.links > a {
+    padding: 20px;
+}
+
+.red {
+    color: red
 }

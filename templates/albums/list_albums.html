@@ -4,17 +4,17 @@
 
 <h1 class="page_title">All Albums</h1>
 
-<p><a href="{% url 'add_album' %}">Add New Album</a></p>
+<p class="add_album"><a href="{% url 'add_album' %}">Add New Album</a></p>
 
-<div>
+<div class="container">
     {% for album in albums %}
         <div class="card">
             {% if album.title %}
                 <p class="image"><img src={{album.cover_art}} alt="#"></p> 
-                <p class="album_title">Album Title: {{album.title}}</p> 
-                <p class="album_artist">Artist: {{album.artist}}</p>
+                <p class="album_info">Album Title: {{album.title}}</p> 
+                <p class="album_info">Artist: {{album.artist}}</p>
             {% endif %}
-            <p>
+            <p class="links">
                 <a href="{% url 'album_details' pk=album.pk %}">Album Details</a>
                 <a href="{% url 'edit_album' pk=album.pk %}">Edit Album</a><br>
                 <a class="red" href="{% url 'delete_album' pk=album.pk %}">Delete Album</a>
