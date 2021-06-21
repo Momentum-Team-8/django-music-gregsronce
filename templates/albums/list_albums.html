@@ -15,7 +15,7 @@
                 <p class="album_artist">{{album.artist}}</p>
             {% endif %}
             <p class="links">
-                <a href="{% url 'album_details' pk=album.pk %}">Album Details</a>
+                <a href="{% url 'album_details' pk=album.pk %}">View Full Details</a>
                 <a class="purple" href="{% url 'edit_album' pk=album.pk %}">Edit Album</a><br>
                 <a class="red" href="{% url 'delete_album' pk=album.pk %}">Delete Album</a>
             </p>

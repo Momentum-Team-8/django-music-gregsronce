@@ -12,6 +12,10 @@
             <p class="album_artist">Artist: {{album.artist}}</p>
             <p class="release_year">Release Year: {{album.release_year}}</p>
         {% endif %}
-        <p class="link"><a href="{% url 'list_albums' %}">Back to Albums List</a></p>
+        <p class="links">
+            <a href="{% url 'list_albums' %}">Back to Albums</a>
+            <a class="purple" href="{% url 'edit_album' pk=album.pk %}">Edit Album</a><br>
+            <a class="red" href="{% url 'delete_album' pk=album.pk %}">Delete Album</a>
+        </p>
     </div>
 {% endblock %}
