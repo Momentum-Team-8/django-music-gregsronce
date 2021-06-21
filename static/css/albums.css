@@ -8,10 +8,30 @@
     font-size: large;
 }
 
-.album_info {
-    text-align: center;
+.forms {
+    padding: 15px;
 }
 
+.album_title {
+    text-align: center;
+    color: #FF9B42;
+    font-size: 20px;
+}
+
+.album_artist {
+    text-align: center;
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+}
+
+.release_year {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-align: center; 
+}
 
 .container {
     display: flex;
@@ -20,20 +40,40 @@
 }
 
 .image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    padding-left: 3em;
+    padding-top: 10px;
 }
 
 .card {
-    width: fit-content;
+    width: 300px;
     height: fit-content;
     margin: 10px;
+    border: red;
+    border-radius: 20px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .links > a {
-    padding: 20px;
+    padding: 10px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.cancel_button {
+    margin-top: 20px;
 }
 
 .red {
-    color: red
+    color: red;
+}
+
+.purple {
+    color: green;
 }

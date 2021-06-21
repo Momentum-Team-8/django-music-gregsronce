@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Album Details</h1>
+<h1 class="page_title">Album Details</h1>
 
 <div>
     <div class="card">
@@ -12,6 +12,6 @@
             <p class="album_artist">Artist: {{album.artist}}</p>
             <p class="release_year">Release Year: {{album.release_year}}</p>
         {% endif %}
-        <p><a href="{% url 'list_albums' %}">Back to Albums List</a></p>
+        <p class="link"><a href="{% url 'list_albums' %}">Back to Albums List</a></p>
     </div>
 {% endblock %}
